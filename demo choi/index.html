@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo choi</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="randomString">
+            <input type="text" class="text" name="text" id="text">
+        </div>
+        <div class="btnArea">
+            <button class="randomBtn" onclick="random()">
+                Random
+            </button>
+        </div>
+    </div>
+    <script>
+        let arrayString = ['Hello!', 'Hola!','こんにちは!','Bonjour!','Xin chào!','你好!','안녕하세요!','ສະບາຍດີ!'];
+        let idx = 0;
+        function random(){
+            if (idx < arrayString.length){
+                document.getElementById('text').value = arrayString[idx];
+                idx += 1;
+            }
+            else if (idx >= arrayString.length){
+                idx = idx - arrayString.length;
+                random();
+            }
+        }
+    </script>
+</body>
+</html>
