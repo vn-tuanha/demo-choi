@@ -17,13 +17,21 @@ body .container .btnArea {
   text-align: center;
 }
 
-body .container .btnArea .randomBtn {
+body .container .btnArea .btn {
   height: 3rem;
   width: 8rem;
-  font-size: 30px;
+  font-size: 20px;
   border: 2px solid #fff;
-  background-color: #333;
-  color: #fff;
   border-radius: 5px;
+}
+
+body .container .btnArea .btn.randomBtn {
+  background-color: #26c520;
+  color: #fff;
+}
+
+body .container .btnArea .btn.removeBtn {
+  background: #f15252;
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */

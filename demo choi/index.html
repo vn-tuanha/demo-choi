@@ -13,8 +13,11 @@
             <input type="text" class="text" name="text" id="text">
         </div>
         <div class="btnArea">
-            <button class="randomBtn" onclick="random()">
+            <button class="btn randomBtn" onclick="random()">
                 Random
+            </button>
+            <button class="btn removeBtn" onclick="remove()">
+                Remove
             </button>
         </div>
     </div>
@@ -30,6 +33,10 @@
                 idx = idx - arrayString.length;
                 random();
             }
+        }
+        function remove(){
+            idx = 0;
+            document.getElementById('text').value = ''
         }
     </script>
 </body>
